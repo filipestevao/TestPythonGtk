@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=testpythongtk
+Exec=testpythongtk
+Icon=io.github.filipestevao.TestPythonGtk
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
