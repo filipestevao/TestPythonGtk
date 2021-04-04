@@ -22,7 +22,7 @@ from gi.repository import Gtk
 class TestpythongtkWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'TestpythongtkWindow'
 
-    label = Gtk.Template.Child()
+    label1 = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
