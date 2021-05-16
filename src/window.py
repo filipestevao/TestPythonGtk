@@ -22,7 +22,21 @@ from gi.repository import Gtk
 class TestpythongtkWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'TestpythongtkWindow'
 
+    entry1 = Gtk.Template.Child()
+    button1 = Gtk.Template.Child()
     label1 = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        # Connect children with their functions
+        self.entry1.connect("changed", self.textEntry)
+        self.button1.connect("clicked", self.onClicked)
+
+    def textEntry(self, *args, **kargs):
+        self.entryText = self.entry1.get_text()
+
+    def onClicked(self, *args, **kargs):
+        try:
+            self.label1.set_text(f"Hello {self.entryText}!")
+        except AttributeError:
+            pass
