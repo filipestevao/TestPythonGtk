@@ -1,7 +1,7 @@
 # Test Python Gtk
 
 This is a personal repository for testing and learning how to work with Gnome Builder.
-This application uses Python, which is my favorite programming language, and Gtk 4.
+This application uses Python and Gtk 4.
 
 ## How to build
 
